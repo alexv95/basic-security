@@ -28,14 +28,14 @@
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
 		 </div>
-        <input name="mail" class="form-control" placeholder="Email address" type="email">
+        <input name="mail" class="form-control" placeholder="Email address" type="email" required>
     </div> <!-- form-group// -->
   
     <div class="form-group input-group">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
 		</div>
-        <input class="form-control" name="password" placeholder="Tu contraseña" type="password">
+        <input class="form-control" name="password" placeholder="Tu contraseña" type="password" required>
     </div> <!-- form-group// -->
    
                                    

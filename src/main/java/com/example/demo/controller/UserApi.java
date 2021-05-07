@@ -37,7 +37,7 @@ public class UserApi {
 	
 	@RequestMapping("/login/init")
 	
-	public RedirectView initLogin(@RequestParam(value="mail") String email,@RequestParam(value="password") String pass,HttpSession session) {
+	public RedirectView initLogin(@RequestParam(value="mail",required=false) String email,@RequestParam(value="password",required=false) String pass,HttpSession session) {
 		
 		if(userService.autenticacion(email, pass)) {
 			session.setAttribute("email", email);
@@ -59,7 +59,7 @@ public class UserApi {
 			session.removeAttribute("registrado");
 			session.setAttribute("registrado",0);
 			//session.invalidate();
-			return new RedirectView("http://localhost:8080/login");	
+			return new RedirectView("http://localhost:8080/");	
 		}
 		
 		
